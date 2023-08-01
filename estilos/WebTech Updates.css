@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url(/Fuentes/good\ times\ rg.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color:  #ECE8EF ;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header{
+    min-height: 70px;
+    display: flex;
+    background-color: #4392F1 ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+header h2{
+    font-family: 'Mifuente', sans-serif;
+    color: #ECE8EF;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    color: #ECE8EF;
+}
+
+nav a:hover{
+    color: rgb(1, 253, 190);
+}
+.clearfix{
+    clear:both;
+}
+
+footer{
+    min-height: 70px;
+    display: flex;
+    background-color: #4392F1 ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.main {
+    display: flex;
+}
+
+aside{
+    float: right;
+    width: 300px;
+    background-color: #E7F0FF;
+    margin-right: 40px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding: 30px;
+    box-sizing:  border-box;
+    border: solid 1px gray;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+}
+
+aside h3{
+    font-size: large 18px;
+    text-transform: uppercase;
+    color:  white;
+    background-color: #DC493A;
+    text-align:  center;
+    padding: 5px;
+    font-family: sans-serif;
+    border-top:  solid 1px #DAAEBE;
+    border-bottom:  solid 1px #DAAEBE;
+}
+aside a:hover{
+    color: #7F9DFF;
+}
+
+.Busqueda{
+    margin-bottom: 60px;
+}
+
+.Busqueda form input[type="text"]{
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.Busqueda form button[type="submit"]{
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-color: #DC493A;
+    padding:  10px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.Busqueda form button[type="submit"]:hover{
+    cursor: pointer;
+    background-color:#2C3E50;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+}
+
+.Logo img{
+    height:  60px;
+    margin-right: 12px;
+}
+
+.content{
+    float:  right;
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.content h1{
+    margin: 30px auto;
+    font-size: 45px;
+    color:#000000;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+}
+.content article{
+    width: calc(100%-340px);
+    background-color:  #E7F0FF;
+    padding:  40px;
+    margin: 40px auto;
+    border: solid 1px #7F9DFF;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro img {
+    width: 300px;
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.frontend{
+    display: flex;
+    align-items: center;
+}
+
+.frontend img{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.backend{
+    display: flex;
+    align-items: center;
+}
+
+.backend img{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.twitter{
+    height:  50px;
+    margin-bottom: 12px;
+}
+
+
+@media (max-width:720px){
+    .content{
+        width: 100%;
+    }
+}
+
+@media (max-width:720px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
